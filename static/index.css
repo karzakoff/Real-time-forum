@@ -1,0 +1,353 @@
+body {
+    height: 100vh;
+    background:#2f323d;
+}
+
+header {
+    height: 100px;
+    width: 99%;
+    background-color: #3D4354;
+    position: fixed;
+    box-shadow: 0px 4px 4px rgb(37, 37, 37);
+    border-radius: 2px;
+    z-index: 500
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+}
+
+.topRight {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 52%;
+    gap: 120px;
+}
+
+
+.notifSignal {
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 44.3%;
+    margin-top: 3.7%
+}
+.notif {
+    height: 33px;
+    position: relative;
+    left: 45%;
+    margin-top: 33px;
+    cursor: pointer
+}
+.notifSignal {
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 44.3%;
+    margin-top: 3.7%
+}
+
+h3 {
+    font-size: 22px;
+    padding: 10px 0px 0px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+    padding-top: 15px;
+    font-size: 18px;
+    letter-spacing: 0.04rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+h4:hover {
+    border-bottom: 3.5px solid white;
+    padding-bottom: 5px;
+}
+
+.container{
+    background-color: #3D4354 ;
+    border:  2px solid black ;
+    margin: 10px ; 
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    box-sizing: border-box ; 
+}
+
+.title{
+    flex-shrink: 0;
+    font-size: 90px;
+    color: #FFF;
+    
+}
+
+.titleCulture{
+    color: #9D5BD0;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: normal;
+    }
+
+.titleFirstPage{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5%;
+    position: relative;
+}
+
+.BigTitle{
+    position: relative;
+    top: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.underTitle{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.12px;
+    margin-top: -0.82em
+}
+
+.button{
+    margin-top: 34px;
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #3A3535;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover{
+    cursor:cell;
+    filter: brightness(1.2);
+}
+
+.text-button{
+    margin-top: 5%;
+    color: #FFF;
+    font-family: "SF UI Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.56px;
+}
+
+/* ============================================================ RESGISTER ========================================================== */
+
+.register-background{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    left: 33%;
+    width: 480px;
+    height: 570px;
+    border-radius: 32px;
+    background: #4D5467;
+    box-shadow: 5px 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.register-text{
+    position: absolute;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    top: 4%;
+}
+
+.register-buttons-div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%
+}
+
+.register-input{
+    position: relative;
+    padding: 5px;
+    margin-top: 25px;
+    width: 70%;
+    height: 23px;
+    border-radius: 7px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none
+}
+
+.register-input::placeholder{
+    margin-left: 20px;
+    font-size: 17px;
+    position: relative;
+    left: 5%;
+    color: rgb(0, 0, 0);   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.register-input:focus::placeholder{
+    color: transparent;
+}
+
+.register-input:focus {
+    outline: none
+}
+
+.register-click{
+    width: 233px;
+    height: 40px;
+    box-shadow: 0px 4px 4px 0px rgb(50, 50, 50);
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #904dc4;
+    position: relative;
+    left: 30%;
+    top: 5%;
+}
+
+.register-click:hover{
+    filter: brightness(1.2);
+}
+
+/* CSS */
+
+#registerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    position: absolute;
+    top: 17%
+}
+.buttonRegister {
+  align-items: center;
+  background-color: #0A66C2;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  padding: 10px
+  /*touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;*/
+}
+
+.verifpassword{
+    margin-left: 22%;
+    gap:10px;
+    margin-top: 5px;
+    width: 135%
+}
+.buttonRegister:hover,
+.buttonRegister:focus { 
+  background-color: #16437E;
+}
+
+.buttonRegister:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.buttonRegister:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.registerTopDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.registerNames {
+    display: flex;
+    flex-direction: row;
+    gap: 50px
+}
+
+.registerInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerLabelRadio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#male {
+    box-shadow: none;
+    width: 10%;
+}
+
+#maleLabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 5px
+}
+
+#female {
+    box-shadow: none;
+    width: 10%;
+    margin-left: 30px;
+}
+
+#femaleLabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 5px
+}
+
+#age {
+    width: 20%;
+    margin-right: 50px
+}
+
+#FirstName {
+    width: 50%
+}
+
+#LastName {
+    width: 50%
+}

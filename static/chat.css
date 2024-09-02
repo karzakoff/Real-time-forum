@@ -1,0 +1,288 @@
+.bigContainerChat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    height: 83%;
+    width: 99vw;
+    top: 127px
+}
+/* ====================================================== LEFT =====================================================*/
+
+.leftContainerChat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3D4354;
+    width: 20%;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid whitesmoke;
+    border-right: none;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: red;
+}
+
+.friends {
+     display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 5px;
+        align-items: center;
+        background-color: #3D4354;
+        margin: 0px 5px 0px 5px
+}
+
+.friends:hover {
+    filter: brightness(1.2);
+}
+
+.friendsPPDiv {
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.friendsPPDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.friendsOnline {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 30px
+}
+
+.friendsName {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-left: 15px
+}
+
+
+/* ====================================================== RIGHT =====================================================*/
+.bigRightContainerChat {
+    position: relative;
+    background-color: #3D4354;
+    width: 80%;
+    height: 100%;
+    border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid whitesmoke;
+    margin-bottom: 20px;
+    
+}
+
+.rightContainerChat{
+    position: relative;
+    height: 90%;
+    overflow-y: auto;
+    scroll-behavior: auto;
+    scrollbar-width: thin;
+    scrollbar-color: whitesmoke;
+    flex-direction: column;
+
+
+}
+
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    padding: 10px 3px 3px 5px
+}
+.headerChat {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px
+}
+
+.chatPPDiv {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.chatPPDiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.chatName {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-left: 10px
+}
+
+.chatDate {
+    color: grey;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    margin-left: 10px;
+}
+
+.chatContent {
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 5px 0px 5px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.chatDiv {
+    height: 60px;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+    padding-bottom: 5px;
+    margin-bottom: 2px;    
+}
+
+.typing {
+    color: white;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    margin-bottom: 70px;
+    left: 2%;
+    color: #8b9cf2;
+    display: block;
+    z-index: 999;
+}
+
+.chatFormDiv {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.chatDate {
+    color: grey;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    margin-left: 10px;
+}
+
+.chatBar {
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: #333947;
+    margin-top: 8px;
+    margin-right: 10px;
+    padding: 0px 0px 0px 10px;
+    bottom: 18%;
+    position: absolute;
+    left: 1%
+}
+.chatBar:focus {
+    outline: none
+}
+.chatButton {
+    border: none;
+    border-radius: 5px;
+    padding: 0px 6px 0px 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: #3a57e7;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 10px;
+    width: 5%;
+    margin-left: 92%
+}
+.chatButton:hover {
+    filter: brightness(1.2);
+}
+
+.welcomeDiv {
+    position: absolute;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 14%;
+    right: 18%
+}
+
+.firstTitle {
+    color: white;
+    width: auto;
+    font-size: 36px;
+    position: relative;
+    left: 15%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.secondTitle {
+    width: auto;
+    color: #8b9cf2;
+    font-size: 46px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topWelcome {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottomWelcome {
+    width: auto;
+    position: relative;
+}
+
+.monster1 {
+    height: 100px;
+    position: relative;
+    left: 23%
+}
+
+.monster2 {
+    position: relative;
+    height: 170px;
+    width: 170px;
+    left: 30%
+}

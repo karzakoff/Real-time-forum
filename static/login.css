@@ -1,0 +1,116 @@
+body {
+    height: 100vh;
+    background:#2f323d;
+}
+
+.container{
+    background-color: #869bd6 ;
+    border:  2px solid black ;
+    margin: 10px ; 
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    box-sizing: border-box ; 
+}
+
+#loginForm {
+    margin-top: 25%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-background {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    left: 33%;
+    width: 510px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #4D5467;
+    box-shadow: 5px 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 46px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.login-input {
+    font-style: italic;
+    position: relative;
+    padding: 12px 20px;
+    margin-top: 25px;
+    font-size: medium;
+    left: 21%;
+    width: 260px;
+    height: 20px;
+    resize: none;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.login-input::placeholder{
+    margin-left: 20px;
+    font-size: 1.2em;
+    position: relative;
+    left: 5%;
+    color: rgb(0, 0, 0);   
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.login-input:focus::placeholder{
+    color: transparent;
+}
+
+.buttonLogin {
+    width: 120px;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    position: relative;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 200px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.login-button-div {
+
+}
